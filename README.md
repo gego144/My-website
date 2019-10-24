@@ -1,2 +1,2 @@
-# hello-world
-My first github pages
+# David Adane's website
+Things ive done with programming
