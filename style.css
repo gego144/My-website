@@ -3,11 +3,11 @@ body{
 }
 
 h1{
-  background-color:#87CEFA; padding: 35px; font-size: 5em; font-family: "Crimson Text"; serif; Times; 
+  background-color:#87CEFA; padding: 35px; font-size: 5em; font-family: sans-serif; serif; Times; 
 }
 
 h2{
-  font-size: 3em; font-family: "Crimson Text"; serif; Times; 
+  font-size: 3em; font-family: sans-serif; serif; Times; 
 }
 
 p {
