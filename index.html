@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class = "bg-dark">
 <head>
   <title>Home!</title>
   <meta charset="utf-8">
@@ -7,7 +7,12 @@
   <meta name="author" content="David Adane">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
   <header>
@@ -18,7 +23,7 @@
       </ul>
     </nav>
   </header>
-  <main class="maincontent">
+  <main class="container">
     <div id="about">
       <h1>About me!</h1>
       <p>I'm an 18 year old computer science student who enjoys programming. The languages i've used for my projects are Java, Python, C#, SQL, HTML, and CSS.</p>
@@ -32,8 +37,8 @@
         <div class="modal-content">
 
           <div class="modal-header">
-            <span class="closeBtn">&times;</span>
             <h2> Zoom</h2>
+            <span class="closeBtn">&times;</span>
           </div>
 
           <div class="modal-body">
@@ -51,6 +56,106 @@
         </div>
       </div>
     </div>
+
+
+    <div id="secondmodal">
+
+      <button id="modalBtn2" class="button">Reminder app</button>
+      <div id="simpleModal2" class="modal">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h2> Reminder app </h2>
+            <span class="closeBtn">&times;</span>
+          </div>
+
+          <div class="modal-body">
+            <p>It will remind the user of a message that they want to be reminded of and at a certian time that they select.</p>
+            <p>(Made with Python, and Tkinter.)</p>
+          </div>
+
+          <div class="modal-footer">
+            <ul class="footer">
+              <li class="use"><a href="https://github.com/gego144/Reminder_app/blob/master/Reminder_app_full_version.exe" target="blank">Use the app</a></li>
+              <li class="code"><a href="https://github.com/gego144/Reminder_app/blob/master/Full_reminder.py" target="blank">See the code</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="thirdmodal">
+
+      <button id="modalBtn3" class="button">Manaic in the woods</button>
+      <div id="simpleModal3" class="modal">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h2> Manaic in the woods </h2>
+            <span class="closeBtn">&times;</span>
+          </div>
+
+          <div class="modal-body">
+            <p>Maniac in the woods is a horror surival game where you have to try and escape a place where you were taken to.</p>
+            <p>(Made with C#, Unity, and Blender.)</p>
+          </div>
+
+          <div class="modal-footer">
+            <ul class="footer">
+              <li class="use"><a href="#">Play the game</a></li>
+              <li class="code"><a href="#">See the code</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="forthmodal">
+
+      <button id="modalBtn4" class="button">Small projects</button>
+      <div id="simpleModal4" class="modal">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h2> Small projects </h2>
+            <span class="closeBtn">&times;</span>
+          </div>
+
+          <div class="modal-body">
+            <p>Many small projects such as a two input calculator, a dictionary, and a program that flips a coin.</p>
+            <p>(Made with Python.)</p>
+          </div>
+
+          <div class="modal-footer">
+            <ul class="footer">
+              <li class="code"><a href="https://github.com/gego144/Small_projects" target="blank">See the code</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <footer>
+      <div class="links">
+        <h1>Links</h1>
+        <ul class="socials">
+          <li id = "Github"><a href="https://github.com/gego144" target="_blank">Github</a></li>
+          <li id = "Linkedin"><a href="https://www.linkedin.com/in/david-adane-927143197/" target="_blank">Linkedin</a></li>
+          <li id = "Resume"><a href="#">Resume</a></li>
+          <li id = "Email"><a href="mailto:adanedawit@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
+
 
 
     <div id="secondmodal">
