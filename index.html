@@ -1,32 +1,153 @@
-<title>David's Website</title>
-<meta charset="UTF-8">
-<meta name="keywords" content="David Adane, unity, programming">
-<meta name="Author" content="David Adane">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="style.css"/>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home!</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Learn anywhere inc homepage">
+  <meta name="author" content="David Adane">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header>
+    <img id="logo" src="logo.png" alt="Logo">
+    <nav>
+      <ul class="link">
+        <li id = "home"><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="maincontent">
+    <div id="about">
+      <h1>About me!</h1>
+      <p>I'm an 18 year old computer science student who enjoys programming. The languages i've used for my projects are Java, Python, C#, SQL, HTML, and CSS.</p>
+    </div>
 
-<h1 align="left" ><b>David Adane</b></h1>
+    <h1>Projects</h1>
+    <div id="firstmodal">
+
+      <button id="modalBtn" class="button">Zoom</button>
+      <div id="simpleModal" class="modal">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+            <h2> Zoom</h2>
+          </div>
+
+          <div class="modal-body">
+            <p>Zoom is a game made with unity3D that is about a car driving down a highway and the objective is to avoid incoming traffic. This is the first game I have made with unity and it served as a great learning expierence.</p>
+            <p>(Made with C#, and Unity.)</p>
+          </div>
+
+          <div class="modal-footer">
+            <ul class="footer">
+              <li class="use"><a href="https://gego144.itch.io/zoom" target="blank">Play the game</a></li>
+              <li class="code"><a href="https://github.com/gego144/Zoom/tree/master/scripts.cs" target="blank">See the code</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
 
-  <ul align = "right"; style="font-size:1.5em;">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="games.html">Projects</a></li>
-  </ul>
+    <div id="secondmodal">
 
-  <hr/>
-  
-<h2 align="center"><b>About me</b></h2>
-<p align="center"; style="font-size:1.5em;">I'm an 18 year old computer science student who enjoys programming. The languages i've used for my projects are Python, C#, SQL, HTML, and CSS.</p>
+      <button id="modalBtn2" class="button">Reminder app</button>
+      <div id="simpleModal2" class="modal">
+        <div class="modal-content">
 
-  
-<h2 align="left"><b>Links</b></h2>
-  <p style="font-size:1.5em;"><a href="https://github.com/gego144" target="_blank">Github</a></p>
-  <p style="font-size:1.5em;"><a href="https://www.linkedin.com/in/david-adane-927143197/" target="_blank">Linkedin</a></p>
-  <p style="font-size:1.5em;"><a href="#">Resume</a></p>
-  <p style="font-size:1.5em;"><a href="mailto:adanedawit@gmail.com">Email</a></p>
+          <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+            <h2> Reminder app </h2>
+          </div>
 
+          <div class="modal-body">
+            <p>It will remind the user of a message that they want to be reminded of and at a certian time that they select.</p>
+            <p>(Made with Python, and Tkinter.)</p>
+          </div>
+
+          <div class="modal-footer">
+            <ul class="footer">
+              <li class="use"><a href="https://github.com/gego144/Reminder_app/blob/master/Reminder_app_full_version.exe" target="blank">Use the app</a></li>
+              <li class="code"><a href="https://github.com/gego144/Reminder_app/blob/master/Full_reminder.py" target="blank">See the code</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="thirdmodal">
+
+      <button id="modalBtn3" class="button">Manaic in the woods</button>
+      <div id="simpleModal3" class="modal">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+            <h2> Manaic in the woods </h2>
+          </div>
+
+          <div class="modal-body">
+            <p>You start in a dark room with no idea where you are.</p>
+            <p>(Made with C#, Unity, and Blender.)</p>
+          </div>
+
+          <div class="modal-footer">
+            <ul class="footer">
+              <li class="use"><a href="#">Play the game</a></li>
+              <li class="code"><a href="#">See the code</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="forthmodal">
+
+      <button id="modalBtn4" class="button">Reminder app</button>
+      <div id="simpleModal4" class="modal">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+            <h2> Reminder app </h2>
+          </div>
+
+          <div class="modal-body">
+            <p>Many small projects such as a two input calculator, a dictionary, and a program that flips a coin.</p>
+            <p>(Made with Python.)</p>
+          </div>
+
+          <div class="modal-footer">
+            <ul class="footer">
+              <li class="code"><a href="https://github.com/gego144/Small_projects" target="blank">See the code</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <footer>
+      <div class="links">
+        <h1>Links</h1>
+        <ul class="socials">
+          <li id = "Github"><a href="https://github.com/gego144" target="_blank">Github</a></li>
+          <li id = "Linkedin"><a href="https://www.linkedin.com/in/david-adane-927143197/" target="_blank">Linkedin</a></li>
+          <li id = "Resume"><a href="#">Resume</a></li>
+          <li id = "Email"><a href="mailto:adanedawit@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
 
