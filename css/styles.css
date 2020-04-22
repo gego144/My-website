@@ -1,6 +1,10 @@
 body{
-  background-color: #696969;
+  background-color: #696969 !important;
   font-family: 'Roboto';
+  color: white;
+}
+
+h1{
   color: white;
 }
 
@@ -23,6 +27,7 @@ body{
   font-weight: bold;
   float: right;
   font-size: 1.5em;
+  padding-right: 10px;
 }
 
 .footer a:hover,
