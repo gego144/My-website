@@ -137,7 +137,7 @@ closeBtn5.addEventListener('click', closeModal5);
 window.addEventListener('click', outsideClick5);
 
 // Function to open modal
-function openModal3() {
+function openModal5() {
   modal5.style.display = 'block';
 }
 
