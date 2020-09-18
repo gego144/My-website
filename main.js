@@ -121,3 +121,34 @@ function outsideClick4(e) {
     modal4.style.display = 'none';
   }
 }
+
+
+var modal5 = document.getElementById('simpleModal5');
+// Get open modal button
+var modalBtn5 = document.getElementById('modalBtn5');
+// Get close button
+var closeBtn5 = document.getElementsByClassName('closeBtn')[4];
+
+// Listen for open click
+modalBtn5.addEventListener('click', openModal5);
+// Listen for close click
+closeBtn5.addEventListener('click', closeModal5);
+// Listen for outside click
+window.addEventListener('click', outsideClick5);
+
+// Function to open modal
+function openModal3() {
+  modal5.style.display = 'block';
+}
+
+// Function to close modal
+function closeModal5() {
+  modal5.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick5(e) {
+  if (e.target == modal5) {
+    modal5.style.display = 'none';
+  }
+}
