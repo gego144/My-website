@@ -54,6 +54,32 @@ var closeBtn6 = document.getElementsByClassName('closeBtn')[5];
 createmodal(modal6, modalBtn6, closeBtn6);
 
 
+var modal7 = document.getElementById('simpleModal7');
+
+var modalBtn7 = document.getElementById('modalBtn7');
+
+var closeBtn7 = document.getElementsByClassName('closeBtn')[6];
+
+createmodal(modal7, modalBtn7, closeBtn7);
+
+
+var modal8 = document.getElementById('simpleModal8');
+
+var modalBtn8 = document.getElementById('modalBtn8');
+
+var closeBtn8 = document.getElementsByClassName('closeBtn')[7];
+
+createmodal(modal8, modalBtn8, closeBtn8);
+
+var modal9 = document.getElementById('simpleModal9');
+
+var modalBtn9 = document.getElementById('modalBtn9');
+
+var closeBtn9 = document.getElementsByClassName('closeBtn')[8];
+
+createmodal(modal9, modalBtn9, closeBtn9);
+
+
 
 function createmodal(modal, modalbtn, closebtn){
   // Listen for open click
@@ -79,6 +105,5 @@ function createmodal(modal, modalbtn, closebtn){
       modal.style.display = 'none';
     }
   }
-
 
 }
