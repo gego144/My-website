@@ -157,3 +157,7 @@ h1{
   padding: 0;
   text-decoration: none;
 }
+
+#col-sm{
+  margin-bottom: 3em;
+}
