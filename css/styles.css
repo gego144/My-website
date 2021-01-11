@@ -162,3 +162,14 @@ h1{
   margin-bottom: 2em !important;
 }
 
+#all_modals{
+  width: 90%;
+}
+
+.project_header{
+  margin-bottom: 0.6em;
+}
+
+.button.button2{
+  background-color: green;
+}
