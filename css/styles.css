@@ -159,5 +159,5 @@ h1{
 }
 
 #col-sm{
-  margin-bottom: 3em;
+  margin-bottom: 3em !important;
 }
