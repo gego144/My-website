@@ -171,5 +171,9 @@ h1{
 }
 
 .button.button2{
-  background-color: green;
+  background-color: #186808;
+}
+
+.modal-header.modal_headers{
+  background-color: #186808;
 }
