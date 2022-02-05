@@ -22,8 +22,8 @@ h1{
 #home a:link,
 #home a:active,
 #home a:visited {
-	color: white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
   font-weight: bold;
   float: right;
   font-size: 1.5em;
@@ -34,8 +34,8 @@ h1{
 .footer a:link,
 .footer a:active,
 .footer a:visited {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
   margin-right: 10px;
   font-size: 1em;
 }
@@ -44,8 +44,8 @@ h1{
 .socials a:link,
 .socials a:active,
 .socials a:visited {
-	color: white;
-	text-decoration: none;
+    color: white;
+    text-decoration: none;
   margin-right: 10px;
   font-size: 1.25em;
 
@@ -54,7 +54,6 @@ h1{
 h1{
   color: white;
 }
-
 
 .button{
   background: coral;
@@ -126,6 +125,10 @@ h1{
   to{opacity: 1}
 }
 
+#aboutTitle{
+  text-align: center;
+}
+
 #firstmodal{
   display: inline-block;
 }
@@ -138,19 +141,28 @@ h1{
   display: inline-block;
 }
 
-#fifthmodal{
-  display: inline-block;
-}
-
 #forthmodal{
   display: inline-block;
+
 }
 
+#fifthmodal{
+  display: inline-block;
+
+}
+
+#sixthmodal{
+  display: inline-block;
+}
 
 .socials li{
   display: block;
   text-decoration: none;
   margin-bottom: 15px;
+  position: absolute;
+  left: 33%;
+  top: 100%;
+  transform: translate(-50%, -50%);
 }
 
 .socials{

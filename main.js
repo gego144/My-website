@@ -96,7 +96,7 @@ function createmodal(modal, modalbtn, closebtn){
 
   // Function to close modal
   function close_modal() {
-    modal5.style.display = 'none';
+    modal.style.display = 'none';
   }
 
   // Close If Outside Click
