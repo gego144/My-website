@@ -47,6 +47,11 @@ var modalBtn9 = document.getElementById('modalBtn9');
 var closeBtn9 = document.getElementsByClassName('closeBtn')[8];
 createmodal(modal9, modalBtn9, closeBtn9);
 
+var modal10 = document.getElementById('simpleModal10');
+var modalBtn10 = document.getElementById('modalBtn10');
+var closeBtn10 = document.getElementsByClassName('closeBtn')[9];
+createmodal(modal10, modalBtn10, closeBtn10);
+
 
 function createmodal(modal, modalbtn, closebtn){
   // Listen for open click
