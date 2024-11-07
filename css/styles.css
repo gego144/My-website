@@ -44,7 +44,7 @@ h1 {
 .footer a:link,
 .footer a:active,
 .footer a:visited {
-	color: white;
+	color: black;
 	text-decoration: none;
 	margin-right: 10px;
 	font-size: 1em;
@@ -143,11 +143,22 @@ h1 {
 }
 
 .col-sm {
-	margin-bottom: 2em !important;
+    width: 100% !important; /* Override any Bootstrap column widths */
+    flex: 0 0 100% !important; /* Prevent flexbox from allowing horizontal layout */
+    max-width: 100% !important;
+    margin-bottom: 2em !important;
+    width: 70%;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+.row {
+    display: block;
+    width: 100%;
 }
 
 #all_modals {
 	width: 100%;
+	
 }
 
 .project_header {
@@ -168,9 +179,364 @@ h1 {
 
 .links {
 	text-align: center;
-	margin-top: -3.12em;
+	margin-bottom: 1em;
+	
 }
 
 .btn:hover {
 	background: rgb(92, 92, 92);
+}
+
+
+
+
+/* Body styling */
+body {
+    background: linear-gradient(to right, #e0e0e0, #c2c2c2); /* Light gradient background */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Link styles */
+.link, .footer li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+#home a, .socials a, .footer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+#home a:hover, .socials a:hover, .footer a:hover {
+    color: coral;
+    font-weight: bold;
+}
+
+/* Button styling */
+.button {
+    background: coral;
+    padding: 1em 2em;
+    color: white;
+    border: none;
+    font-size: 1.25em;
+    border-radius: 15px;
+    width: 15em;
+    height: 5em;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Darkened overlay */
+}
+
+.modal-content {
+    background-color: #f0f2f5; /* Light background for contrast */
+    color: #333;
+    margin: 10% auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s;
+}
+
+.modal-header {
+    background-color: coral;
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-header h2 {
+    margin: 0;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 10px;
+    text-align: right;
+}
+
+/* Close Button */
+.closeBtn {
+    color: #fff;
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.closeBtn:hover {
+    color: #ff6b6b;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Other Styles */
+#aboutTitle {
+    text-align: center;
+}
+
+.socials {
+    padding: 0;
+    display: inline-block;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #5c5c5c;
+}
+
+.button.button2 {
+    background-color: #2d8b57;
+}
+
+.button.button2:hover {
+    background-color: #333;
+}
+
+.modal-header.modal_headers {
+    background-color: #2d8b57;
+}
+
+/* Modern button styling */
+.button {
+    background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Soft gradient */
+    padding: 0.8em 2em;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 25px; /* More rounded corners */
+    width: 12em;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.button:hover {
+    transform: translateY(-4px); /* Slight "lift" effect on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #feb47b, #ff7e5f); /* Inverted gradient on hover */
+}
+
+.button:active {
+    transform: translateY(2px); /* Slight "press" effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Alternative button styling for secondary buttons */
+.button.button2 {
+    background: linear-gradient(145deg, #4CAF50, #81C784); /* Soft green gradient */
+}
+
+.button.button2:hover {
+    background: linear-gradient(145deg, #81C784, #4CAF50); /* Inverted gradient on hover */
+}
+
+
+/* General font settings */
+body {
+    background: linear-gradient(to right, #e0e0e0, #c2c2c2);
+    font-family: 'Roboto', sans-serif; /* Modern font choice */
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+	font-family: 'Space Grotesk', sans-serif;
+	letter-spacing: -0.02em;
+}
+
+h2, .section-title {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+p, a {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+.button-text {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+/* Modern button styling with consistent size */
+.button {
+    background: linear-gradient(145deg, #ff7e5f, #feb47b); /* Gradient color */
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 0; /* Remove padding for fixed width/height */
+    border: none;
+    width: 12em; /* Fixed width */
+    height: 3.5em; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.button:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #feb47b, #ff7e5f); /* Inverted gradient */
+}
+
+.button:active {
+    transform: translateY(1px); /* Press effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Secondary button with consistent size */
+.button.button2 {
+    background: linear-gradient(145deg, #4CAF50, #81C784); /* Green gradient */
+}
+
+.button.button2:hover {
+    background: linear-gradient(145deg, #81C784, #4CAF50);
+}
+
+/* Container to hold all project buttons vertically */
+.project-container {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    gap: 1.5em; /* Space between each button */
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Update button styles if necessary */
+.button {
+    background: linear-gradient(145deg, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 100%; /* Make buttons fill the width of the container */
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #feb47b, #ff7e5f);
+}
+
+
+/* Container to hold all project buttons vertically */
+.project-container {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    gap: 1.5em; /* Space between each button */
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Update button styles if necessary */
+.button {
+    background: linear-gradient(145deg, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    width: 100%; /* Make buttons fill the width of the container */
+    height: 3.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(145deg, #feb47b, #ff7e5f);
+}
+
+
+.button {
+	width: 70%; /* Make buttons take 70% of the width */
+	margin: 10px auto; /* Centers the button and adds vertical spacing */
+	padding: 10px; /* Adds horizontal padding to make the button wider */
+	display: block; /* Makes each button take full width of its container */
+}
+  
+.project-container {
+	display: flex;
+	flex-direction: column; /* Stacks items vertically */
+	align-items: center; /* Centers items horizontally */
+	gap: 20px; /* Space between each button */
+	margin: 0 auto;
+	padding: 20px;
+  }
+
+.li.use{
+	color: #000;
 }
