@@ -1,80 +1,14 @@
-// Get modal element
-var modal = document.getElementById('simpleModal');
-// Get open modal button
-var modalBtn = document.getElementById('modalBtn');
-// Get close button
-var closeBtn = document.getElementsByClassName('closeBtn')[0];
-createmodal(modal, modalBtn, closeBtn);
+const links = [...document.querySelectorAll('.rail nav a')];
+const sections = links.map(link => document.querySelector(link.hash));
 
+const setActive = id => links.forEach(link => link.classList.toggle('active', link.hash === '#' + id));
 
-var modal2 = document.getElementById('simpleModal2');
-var modalBtn2 = document.getElementById('modalBtn2');
-var closeBtn2 = document.getElementsByClassName('closeBtn')[1];
-createmodal(modal2, modalBtn2, closeBtn2);
+const observer = new IntersectionObserver(entries => {
+	const visible = entries.filter(e => e.isIntersecting);
+	if (visible.length) {
+		setActive(visible.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0].target.id);
+	}
+}, { rootMargin: '-20% 0px -70% 0px' });
 
-var modal3 = document.getElementById('simpleModal3');
-var modalBtn3 = document.getElementById('modalBtn3');
-var closeBtn3 = document.getElementsByClassName('closeBtn')[2];
-createmodal(modal3, modalBtn3, closeBtn3);
-
-var modal4 = document.getElementById('simpleModal4');
-var modalBtn4 = document.getElementById('modalBtn4');
-var closeBtn4 = document.getElementsByClassName('closeBtn')[3];
-createmodal(modal4, modalBtn4, closeBtn4);
-
-var modal5 = document.getElementById('simpleModal5');
-var modalBtn5 = document.getElementById('modalBtn5');
-var closeBtn5 = document.getElementsByClassName('closeBtn')[4];
-createmodal(modal5, modalBtn5, closeBtn5);
-
-var modal6 = document.getElementById('simpleModal6');
-var modalBtn6 = document.getElementById('modalBtn6');
-var closeBtn6 = document.getElementsByClassName('closeBtn')[5];
-createmodal(modal6, modalBtn6, closeBtn6);
-
-var modal7 = document.getElementById('simpleModal7');
-var modalBtn7 = document.getElementById('modalBtn7');
-var closeBtn7 = document.getElementsByClassName('closeBtn')[6];
-createmodal(modal7, modalBtn7, closeBtn7);
-
-var modal8 = document.getElementById('simpleModal8');
-var modalBtn8 = document.getElementById('modalBtn8');
-var closeBtn8 = document.getElementsByClassName('closeBtn')[7];
-createmodal(modal8, modalBtn8, closeBtn8);
-
-var modal9 = document.getElementById('simpleModal9');
-var modalBtn9 = document.getElementById('modalBtn9');
-var closeBtn9 = document.getElementsByClassName('closeBtn')[8];
-createmodal(modal9, modalBtn9, closeBtn9);
-
-var modal10 = document.getElementById('simpleModal10');
-var modalBtn10 = document.getElementById('modalBtn10');
-var closeBtn10 = document.getElementsByClassName('closeBtn')[9];
-createmodal(modal10, modalBtn10, closeBtn10);
-
-
-function createmodal(modal, modalbtn, closebtn){
-  // Listen for open click
-  modalbtn.addEventListener('click', open_modal);
-  // Listen for close click
-  closebtn.addEventListener('click', close_modal);
-  // Listen for outside click
-  window.addEventListener('click', outside_click);
-
-  // Function to open modal
-  function open_modal() {
-    modal.style.display = 'block';
-  }
-
-  // Function to close modal
-  function close_modal() {
-    modal.style.display = 'none';
-  }
-
-  // Close If Outside Click
-  function outside_click(e) {
-    if (e.target == modal) {
-      modal.style.display = 'none';
-    }
-  }
-}
+sections.forEach(section => observer.observe(section));
+setActive('about');
